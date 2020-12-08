@@ -1,0 +1,32 @@
+server:
+  port: 10000
+  read-timeout: 60
+  write-timeout: 60
+
+app:
+  #run-mode:debug/release
+  run-mode: debug
+  pagesize: 10
+  log-path: ../log/debug.log
+  identity-key: dps
+
+database:
+  type: mysql
+  user: root
+  password: root
+  host: 127.0.0.1:3306
+  name: export
+#  list-prefix: go_
+
+redis:
+  addr: 127.0.0.1:6379
+  pass: 
+  db: 1
+  timeout: 1000
+  expired-time: 3600
+
+rabbitmq:
+  addr: 127.0.0.1
+  port: 5672
+  user: guest
+  pass: guest
